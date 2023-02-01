@@ -37,27 +37,23 @@ public class ContactsPageTest extends TestBase{
 		testutil.switchtoFrame("mainpanel");
 	}
 	
-	@Test(priority=1)
-	public void verifyContactsLabel() {
-		homepage.clickOnContactsLink();
-	    Assert.assertTrue(contactsPage.verifyContactslabel(),"Contacts label is not displayed");
-	    driver.switchTo().parentFrame();
-	}
 	
-	@Test(priority=2)
-	public void selectContactsTest() {
-		homepage.clickOnContactsLink();
-		driver.switchTo().parentFrame();
-		contactsPage.selectContactsByName("Naveen khunteta");
-	}
-	
-	@Test(priority = 3 )
-	public void selectMultiple() {
-		homepage.clickOnContactsLink();
-		driver.switchTo().parentFrame();
-		contactsPage.selectContactsByName("Naveen khunteta");
-		contactsPage.selectContactsByName("harish kothnur");
-	}
+	  @Test(priority=1) public void verifyContactsLabel() {
+	  homepage.clickOnContactsLink();
+	  Assert.assertTrue(contactsPage.verifyContactslabel()
+	  ,"Contacts label is not displayed");
+	  
+	  }
+	  
+	  @Test(priority=2) public void selectContactsTest() {
+	  homepage.clickOnContactsLink();
+	  contactsPage.selectContactsByName("Naveen khunteta"); }
+	  
+	  @Test(priority = 3 ) public void selectMultiple() {
+	  homepage.clickOnContactsLink();
+	  contactsPage.selectContactsByName("Naveen khunteta");
+	  contactsPage.selectContactsByName("harish kothnur"); }
+	 
 	
 	@DataProvider()
 	public Object[][] getCRMTestData() throws FileNotFoundException {
@@ -67,7 +63,7 @@ public class ContactsPageTest extends TestBase{
 	
 	@Test(priority = 4,dataProvider = "getCRMTestData")
 	public void validateCreateNewContactTest(String title,String fname,String lname,String company) {
-		homepage.clickOnNewContactsLink();
+	    homepage.clickOnNewContactsLink();
 		contactsPage.createNewContact(title,fname,lname,company);
 	}
 	

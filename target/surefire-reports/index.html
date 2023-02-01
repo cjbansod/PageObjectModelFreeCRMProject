@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-skipped">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">14 methods,  5 skipped,  9 passed</span>
+                    <span class="method-stats">14 methods, 3 failed,  3 skipped,  8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.crm.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.crm.qa.testcases.ContactsPageTest" class="method navigator-link" hash-for-method="selectContactsTest">selectContactsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.crm.qa.testcases.ContactsPageTest" class="method navigator-link" hash-for-method="selectMultiple">selectMultiple</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -101,16 +125,6 @@
                       <a href="#" panel-name="suite-Surefire_suite" class="show-methods skipped suite-Surefire_suite"> (show)</a> <!-- show-methods skipped suite-Surefire_suite -->
                     </span>
                     <div class="method-list-content skipped suite-Surefire_suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.crm.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.crm.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="validateCRMLogoTest">validateCRMLogoTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="com.crm.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="verifyContactsLinkTest">verifyContactsLinkTest</a> <!-- method navigator-link -->
@@ -147,17 +161,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.crm.qa.testcases.ContactsPageTest" class="method navigator-link" hash-for-method="selectContactsTest">selectContactsTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.crm.qa.testcases.ContactsPageTest" class="method navigator-link" hash-for-method="selectMultiple">selectMultiple</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="FreeCRMMavenProject.FreeCRMMavenProject.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue">shouldAnswerWithTrue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.crm.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="validateCRMLogoTest">validateCRMLogoTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.crm.qa.testcases.ContactsPageTest" class="method navigator-link" hash-for-method="validateCreateNewContactTest(Ms., Aarti , Kale, CBA)">validateCreateNewContactTest(Ms., Aarti , Kale, CBA)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -168,11 +182,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="com.crm.qa.testcases.ContactsPageTest" class="method navigator-link" hash-for-method="validateCreateNewContactTest(Ms., Pooja, Khalkar, Baxster)">validateCreateNewContactTest(Ms., Pooja, Khalkar, Baxster)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.crm.qa.testcases.ContactsPageTest" class="method navigator-link" hash-for-method="validateCreateNewContactTest(Ms., Aarti , Kale, CBA)">validateCreateNewContactTest(Ms., Aarti , Kale, CBA)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -192,9 +201,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-skipped">
+          <div class="suite-Surefire_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.crm.qa.testcases.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -203,14 +212,15 @@
                   <a name="loginTest">
                   </a> <!-- loginTest -->
                   <span class="method-name">loginTest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 17.382
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
   (Session info: chrome=109.0.5414.119)
 Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.0.1&apos;, java.version: &apos;19.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5e2f943ff84d975db214a7a34308eb70, get {url=https://classic.freecrm.com/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/wv/7btdhzfn7yz...}, goog:chromeOptions: {debuggerAddress: localhost:61242}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:61242/devtoo..., se:cdpVersion: 109.0.5414.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5e2f943ff84d975db214a7a34308eb70
+Command: [928a78de6322a1882baded6c3172be3d, clickElement {id=111abcb1-1cbd-410d-9204-b0a4ea99c7d3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/wv/7btdhzfn7yz...}, goog:chromeOptions: {debuggerAddress: localhost:49538}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49538/devtoo..., se:cdpVersion: 109.0.5414.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (928a78de6322a1882baded6c3172be3d)] -&gt; xpath: //input[@type=&apos;submit&apos;]]
+Session ID: 928a78de6322a1882baded6c3172be3d
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -218,30 +228,77 @@ Session ID: 5e2f943ff84d975db214a7a34308eb70
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:296)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:106)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.get(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:166)
-	at com.crm.qa.base.TestBase.initialization(TestBase.java:59)
-	at com.crm.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:22)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:378)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:391)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy9.click(Unknown Source)
+	at com.crm.qa.pages.LoginPage.login(LoginPage.java:48)
+	at com.crm.qa.testcases.LoginPageTest.loginTest(LoginPageTest.java:39)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 39 stack frames
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.crm.qa.testcases.ContactsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectContactsTest">
+                  </a> <!-- selectContactsTest -->
+                  <span class="method-name">selectContactsTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Naveen khunteta&apos;]//parent::td[@class=&apos;datalistrow&apos;]//preceding-sibling::td[@class=&apos;datalistrow&apos;]//input[@name=&apos;contact_id&apos;]&quot;}
+  (Session info: chrome=109.0.5414.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.0.1&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [320dd75def07579c2bdaf3c13add1dca, findElement {using=xpath, value=//a[text()=&apos;Naveen khunteta&apos;]//parent::td[@class=&apos;datalistrow&apos;]//preceding-sibling::td[@class=&apos;datalistrow&apos;]//input[@name=&apos;contact_id&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/wv/7btdhzfn7yz...}, goog:chromeOptions: {debuggerAddress: localhost:65042}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65042/devtoo..., se:cdpVersion: 109.0.5414.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 320dd75def07579c2bdaf3c13add1dca
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:106)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:195)
+	at com.crm.qa.pages.ContactsPage.selectContactsByName(ContactsPage.java:41)
+	at com.crm.qa.testcases.ContactsPageTest.selectContactsTest(ContactsPageTest.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="validateCRMLogoTest">
-                  </a> <!-- validateCRMLogoTest -->
-                  <span class="method-name">validateCRMLogoTest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 17.382
+                  <a name="selectMultiple">
+                  </a> <!-- selectMultiple -->
+                  <span class="method-name">selectMultiple</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Naveen khunteta&apos;]//parent::td[@class=&apos;datalistrow&apos;]//preceding-sibling::td[@class=&apos;datalistrow&apos;]//input[@name=&apos;contact_id&apos;]&quot;}
   (Session info: chrome=109.0.5414.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.0.1&apos;, java.version: &apos;19.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5e2f943ff84d975db214a7a34308eb70, get {url=https://classic.freecrm.com/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/wv/7btdhzfn7yz...}, goog:chromeOptions: {debuggerAddress: localhost:61242}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:61242/devtoo..., se:cdpVersion: 109.0.5414.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5e2f943ff84d975db214a7a34308eb70
+Command: [9547cd788f927e137ac655cb565061ae, findElement {using=xpath, value=//a[text()=&apos;Naveen khunteta&apos;]//parent::td[@class=&apos;datalistrow&apos;]//preceding-sibling::td[@class=&apos;datalistrow&apos;]//input[@name=&apos;contact_id&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/wv/7btdhzfn7yz...}, goog:chromeOptions: {debuggerAddress: localhost:65168}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65168/devtoo..., se:cdpVersion: 109.0.5414.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9547cd788f927e137ac655cb565061ae
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -249,19 +306,22 @@ Session ID: 5e2f943ff84d975db214a7a34308eb70
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:296)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
 	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:106)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.get(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:166)
-	at com.crm.qa.base.TestBase.initialization(TestBase.java:59)
-	at com.crm.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:22)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:195)
+	at com.crm.qa.pages.ContactsPage.selectContactsByName(ContactsPage.java:41)
+	at com.crm.qa.testcases.ContactsPageTest.selectMultiple(ContactsPageTest.java:58)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 39 stack frames
+... Removed 35 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-skipped -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
@@ -278,10 +338,10 @@ Session ID: 5e2f943ff84d975db214a7a34308eb70
 Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.0.1&apos;, java.version: &apos;19.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1cfc45e47cd458388cfb343a119c20c6, clickElement {id=979274df-c19c-4a75-8bab-a6665e8f4eae}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/wv/7btdhzfn7yz...}, goog:chromeOptions: {debuggerAddress: localhost:61082}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:61082/devtoo..., se:cdpVersion: 109.0.5414.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (1cfc45e47cd458388cfb343a119c20c6)] -&gt; xpath: //input[@type=&apos;submit&apos;]]
-Session ID: 1cfc45e47cd458388cfb343a119c20c6
+Command: [1306d0a0ea04e81b174ad6b35fe17386, clickElement {id=6eaf95a1-962d-4161-9a3a-c14bedb2cf1a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/wv/7btdhzfn7yz...}, goog:chromeOptions: {debuggerAddress: localhost:49298}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49298/devtoo..., se:cdpVersion: 109.0.5414.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (1306d0a0ea04e81b174ad6b35fe17386)] -&gt; xpath: //input[@type=&apos;submit&apos;]]
+Session ID: 1306d0a0ea04e81b174ad6b35fe17386
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -313,10 +373,10 @@ Session ID: 1cfc45e47cd458388cfb343a119c20c6
 Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.0.1&apos;, java.version: &apos;19.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1cfc45e47cd458388cfb343a119c20c6, clickElement {id=979274df-c19c-4a75-8bab-a6665e8f4eae}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/wv/7btdhzfn7yz...}, goog:chromeOptions: {debuggerAddress: localhost:61082}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:61082/devtoo..., se:cdpVersion: 109.0.5414.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (1cfc45e47cd458388cfb343a119c20c6)] -&gt; xpath: //input[@type=&apos;submit&apos;]]
-Session ID: 1cfc45e47cd458388cfb343a119c20c6
+Command: [1306d0a0ea04e81b174ad6b35fe17386, clickElement {id=6eaf95a1-962d-4161-9a3a-c14bedb2cf1a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/wv/7btdhzfn7yz...}, goog:chromeOptions: {debuggerAddress: localhost:49298}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49298/devtoo..., se:cdpVersion: 109.0.5414.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (1306d0a0ea04e81b174ad6b35fe17386)] -&gt; xpath: //input[@type=&apos;submit&apos;]]
+Session ID: 1306d0a0ea04e81b174ad6b35fe17386
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -348,10 +408,10 @@ Session ID: 1cfc45e47cd458388cfb343a119c20c6
 Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.0.1&apos;, java.version: &apos;19.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1cfc45e47cd458388cfb343a119c20c6, clickElement {id=979274df-c19c-4a75-8bab-a6665e8f4eae}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/wv/7btdhzfn7yz...}, goog:chromeOptions: {debuggerAddress: localhost:61082}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:61082/devtoo..., se:cdpVersion: 109.0.5414.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (1cfc45e47cd458388cfb343a119c20c6)] -&gt; xpath: //input[@type=&apos;submit&apos;]]
-Session ID: 1cfc45e47cd458388cfb343a119c20c6
+Command: [1306d0a0ea04e81b174ad6b35fe17386, clickElement {id=6eaf95a1-962d-4161-9a3a-c14bedb2cf1a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/wv/7btdhzfn7yz...}, goog:chromeOptions: {debuggerAddress: localhost:49298}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49298/devtoo..., se:cdpVersion: 109.0.5414.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (1306d0a0ea04e81b174ad6b35fe17386)] -&gt; xpath: //input[@type=&apos;submit&apos;]]
+Session ID: 1306d0a0ea04e81b174ad6b35fe17386
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -388,6 +448,13 @@ Session ID: 1cfc45e47cd458388cfb343a119c20c6
                   <span class="method-name">loginPageTitleTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateCRMLogoTest">
+                  </a> <!-- validateCRMLogoTest -->
+                  <span class="method-name">validateCRMLogoTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Surefire_suite-class-passed -->
           <div class="suite-Surefire_suite-class-passed">
@@ -420,16 +487,10 @@ Session ID: 1cfc45e47cd458388cfb343a119c20c6
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="selectContactsTest">
-                  </a> <!-- selectContactsTest -->
-                  <span class="method-name">selectContactsTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectMultiple">
-                  </a> <!-- selectMultiple -->
-                  <span class="method-name">selectMultiple</span>
+                  <a name="validateCreateNewContactTest(Ms., Aarti , Kale, CBA)">
+                  </a> <!-- validateCreateNewContactTest(Ms., Aarti , Kale, CBA) -->
+                  <span class="method-name">validateCreateNewContactTest</span>
+                  <span class="parameters">(Ms.,Aarti ,Kale,CBA)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -446,14 +507,6 @@ Session ID: 1cfc45e47cd458388cfb343a119c20c6
                   </a> <!-- validateCreateNewContactTest(Ms., Pooja, Khalkar, Baxster) -->
                   <span class="method-name">validateCreateNewContactTest</span>
                   <span class="parameters">(Ms.,Pooja,Khalkar,Baxster)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateCreateNewContactTest(Ms., Aarti , Kale, CBA)">
-                  </a> <!-- validateCreateNewContactTest(Ms., Aarti , Kale, CBA) -->
-                  <span class="method-name">validateCreateNewContactTest</span>
-                  <span class="parameters">(Ms.,Aarti ,Kale,CBA)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -521,66 +574,66 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(14);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateCreateNewContactTest')
-data.setCell(0, 2, 'com.crm.qa.testcases.ContactsPageTest')
-data.setCell(0, 3, 6588);
+data.setCell(0, 1, 'loginTest')
+data.setCell(0, 2, 'com.crm.qa.testcases.LoginPageTest')
+data.setCell(0, 3, 21230);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateCreateNewContactTest')
+data.setCell(1, 1, 'selectContactsTest')
 data.setCell(1, 2, 'com.crm.qa.testcases.ContactsPageTest')
-data.setCell(1, 3, 6393);
+data.setCell(1, 3, 12477);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validateCreateNewContactTest')
+data.setCell(2, 1, 'selectMultiple')
 data.setCell(2, 2, 'com.crm.qa.testcases.ContactsPageTest')
-data.setCell(2, 3, 6163);
+data.setCell(2, 3, 12374);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'launchBrowser')
-data.setCell(3, 2, 'FreeCRMMavenProject.FreeCRMMavenProject.AppTest')
-data.setCell(3, 3, 3931);
+data.setCell(3, 1, 'validateCreateNewContactTest')
+data.setCell(3, 2, 'com.crm.qa.testcases.ContactsPageTest')
+data.setCell(3, 3, 6581);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyContactsLabel')
+data.setCell(4, 1, 'validateCreateNewContactTest')
 data.setCell(4, 2, 'com.crm.qa.testcases.ContactsPageTest')
-data.setCell(4, 3, 2269);
+data.setCell(4, 3, 6521);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'selectMultiple')
+data.setCell(5, 1, 'validateCreateNewContactTest')
 data.setCell(5, 2, 'com.crm.qa.testcases.ContactsPageTest')
-data.setCell(5, 3, 2199);
+data.setCell(5, 3, 6371);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'selectContactsTest')
-data.setCell(6, 2, 'com.crm.qa.testcases.ContactsPageTest')
-data.setCell(6, 3, 2124);
+data.setCell(6, 1, 'launchBrowser')
+data.setCell(6, 2, 'FreeCRMMavenProject.FreeCRMMavenProject.AppTest')
+data.setCell(6, 3, 3773);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'loginPageTitleTest')
-data.setCell(7, 2, 'com.crm.qa.testcases.LoginPageTest')
-data.setCell(7, 3, 7);
+data.setCell(7, 1, 'verifyContactsLabel')
+data.setCell(7, 2, 'com.crm.qa.testcases.ContactsPageTest')
+data.setCell(7, 3, 2292);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'shouldAnswerWithTrue')
-data.setCell(8, 2, 'FreeCRMMavenProject.FreeCRMMavenProject.AppTest')
-data.setCell(8, 3, 1);
+data.setCell(8, 1, 'validateCRMLogoTest')
+data.setCell(8, 2, 'com.crm.qa.testcases.LoginPageTest')
+data.setCell(8, 3, 24);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyHomePageTitleTest')
-data.setCell(9, 2, 'com.crm.qa.testcases.HomePageTest')
-data.setCell(9, 3, 0);
+data.setCell(9, 1, 'loginPageTitleTest')
+data.setCell(9, 2, 'com.crm.qa.testcases.LoginPageTest')
+data.setCell(9, 3, 8);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifyCorrectUsername')
-data.setCell(10, 2, 'com.crm.qa.testcases.HomePageTest')
-data.setCell(10, 3, 0);
+data.setCell(10, 1, 'shouldAnswerWithTrue')
+data.setCell(10, 2, 'FreeCRMMavenProject.FreeCRMMavenProject.AppTest')
+data.setCell(10, 3, 1);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'validateCRMLogoTest')
-data.setCell(11, 2, 'com.crm.qa.testcases.LoginPageTest')
-data.setCell(11, 3, 0);
+data.setCell(11, 1, 'verifyContactsLinkTest')
+data.setCell(11, 2, 'com.crm.qa.testcases.HomePageTest')
+data.setCell(11, 3, 1);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'verifyContactsLinkTest')
+data.setCell(12, 1, 'verifyHomePageTitleTest')
 data.setCell(12, 2, 'com.crm.qa.testcases.HomePageTest')
 data.setCell(12, 3, 0);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'loginTest')
-data.setCell(13, 2, 'com.crm.qa.testcases.LoginPageTest')
+data.setCell(13, 1, 'verifyCorrectUsername')
+data.setCell(13, 2, 'com.crm.qa.testcases.HomePageTest')
 data.setCell(13, 3, 0);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 29 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -613,82 +666,86 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">shouldAnswerWithTrue</span>
-                <span class="method-start">3934 ms</span>
+                <span class="method-start">3776 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testcases.ContactsPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">3936 ms</span>
+                <span class="method-start">3778 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyContactsLabel</span>
-                <span class="method-start">28717 ms</span>
+                <span class="method-start">28359 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">30987 ms</span>
+                <span class="method-start">30652 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">31096 ms</span>
+                <span class="method-start">30766 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">selectContactsTest</span>
-                <span class="method-start">54630 ms</span>
+                <span class="method-start">58844 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">56754 ms</span>
+                <span class="method-start">71326 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">56866 ms</span>
+                <span class="method-start">71436 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">selectMultiple</span>
-                <span class="method-start">80417 ms</span>
+                <span class="method-start">97264 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">82616 ms</span>
+                <span class="method-start">109639 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">83014 ms</span>
+                <span class="method-start">110026 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateCreateNewContactTest(Mr., Chirag, Bansode, Altimetrik)</span>
-                <span class="method-start">113564 ms</span>
+                <span class="method-start">133420 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">120153 ms</span>
+                <span class="method-start">140001 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">120265 ms</span>
+                <span class="method-start">140105 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateCreateNewContactTest(Ms., Aarti , Kale, CBA)</span>
-                <span class="method-start">144081 ms</span>
+                <span class="method-start">163680 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">150475 ms</span>
+                <span class="method-start">170052 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">150583 ms</span>
+                <span class="method-start">170161 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateCreateNewContactTest(Ms., Pooja, Khalkar, Baxster)</span>
-                <span class="method-start">174804 ms</span>
+                <span class="method-start">193771 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">180968 ms</span>
+                <span class="method-start">200292 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -697,80 +754,86 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">setup</span>
-                <span class="method-start">181075 ms</span>
+                <span class="method-start">200397 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">240742 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyHomePageTitleTest</span>
-                <span class="method-start">212629 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">212630 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyCorrectUsername</span>
-                <span class="method-start">212630 ms</span>
+                <span class="method-start">240742 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">212630 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">212631 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">212631 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">212631 ms</span>
+                <span class="method-start">240743 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyContactsLinkTest</span>
-                <span class="method-start">212631 ms</span>
+                <span class="method-start">240743 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyCorrectUsername</span>
+                <span class="method-start">240743 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">240743 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">240743 ms</span>
+              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testcases.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">212632 ms</span>
+                <span class="method-start">240744 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.crm.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">240744 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.crm.qa.testcases.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginPageTitleTest</span>
-                <span class="method-start">224413 ms</span>
+                <span class="method-start">255336 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">224420 ms</span>
+                <span class="method-start">255344 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setUp</span>
-                <span class="method-start">224532 ms</span>
+                <span class="method-start">255447 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateCRMLogoTest</span>
-                <span class="method-start">246225 ms</span>
+                <span class="method-start">269001 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">269026 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">246226 ms</span>
+                <span class="method-start">269133 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">loginTest</span>
-                <span class="method-start">246226 ms</span>
+                <span class="method-start">283469 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">246226 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">246226 ms</span>
+                <span class="method-start">304700 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -7,10 +7,17 @@
         <methods>
           <include name="setUp"/>
           <include name="loginTest"/>
-          <include name="validateCRMLogoTest"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.LoginPageTest -->
+      <class name="com.crm.qa.testcases.ContactsPageTest">
+        <methods>
+          <include name="selectMultiple"/>
+          <include name="selectContactsTest"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.ContactsPageTest -->
       <class name="com.crm.qa.testcases.HomePageTest">
         <methods>
           <include name="verifyCorrectUsername"/>

@@ -1,29 +1,56 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 24, Failures: 2, Errors: 0, Skipped: 13, Time elapsed: 246.515 s <<< FAILURE! - in TestSuite
-setup(com.crm.qa.testcases.HomePageTest)  Time elapsed: 37.826 s  <<< FAILURE!
+Tests run: 20, Failures: 4, Errors: 0, Skipped: 8, Time elapsed: 305.262 s <<< FAILURE! - in TestSuite
+selectContactsTest(com.crm.qa.testcases.ContactsPageTest)  Time elapsed: 12.484 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Naveen khunteta']//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']"}
+  (Session info: chrome=109.0.5414.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.0.1', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [320dd75def07579c2bdaf3c13add1dca, findElement {using=xpath, value=//a[text()='Naveen khunteta']//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/wv/7btdhzfn7yz...}, goog:chromeOptions: {debuggerAddress: localhost:65042}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65042/devtoo..., se:cdpVersion: 109.0.5414.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 320dd75def07579c2bdaf3c13add1dca
+	at com.crm.qa.testcases.ContactsPageTest.selectContactsTest(ContactsPageTest.java:51)
+
+selectMultiple(com.crm.qa.testcases.ContactsPageTest)  Time elapsed: 12.375 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Naveen khunteta']//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']"}
+  (Session info: chrome=109.0.5414.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.0.1', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9547cd788f927e137ac655cb565061ae, findElement {using=xpath, value=//a[text()='Naveen khunteta']//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/wv/7btdhzfn7yz...}, goog:chromeOptions: {debuggerAddress: localhost:65168}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65168/devtoo..., se:cdpVersion: 109.0.5414.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9547cd788f927e137ac655cb565061ae
+	at com.crm.qa.testcases.ContactsPageTest.selectMultiple(ContactsPageTest.java:58)
+
+setup(com.crm.qa.testcases.HomePageTest)  Time elapsed: 46.969 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: 
 timeout: Timed out receiving message from renderer: 20.000
   (Session info: chrome=109.0.5414.119)
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.0.1', java.version: '19.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1cfc45e47cd458388cfb343a119c20c6, clickElement {id=979274df-c19c-4a75-8bab-a6665e8f4eae}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/wv/7btdhzfn7yz...}, goog:chromeOptions: {debuggerAddress: localhost:61082}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:61082/devtoo..., se:cdpVersion: 109.0.5414.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (1cfc45e47cd458388cfb343a119c20c6)] -> xpath: //input[@type='submit']]
-Session ID: 1cfc45e47cd458388cfb343a119c20c6
+Command: [1306d0a0ea04e81b174ad6b35fe17386, clickElement {id=6eaf95a1-962d-4161-9a3a-c14bedb2cf1a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/wv/7btdhzfn7yz...}, goog:chromeOptions: {debuggerAddress: localhost:49298}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49298/devtoo..., se:cdpVersion: 109.0.5414.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (1306d0a0ea04e81b174ad6b35fe17386)] -> xpath: //input[@type='submit']]
+Session ID: 1306d0a0ea04e81b174ad6b35fe17386
 	at com.crm.qa.testcases.HomePageTest.setup(HomePageTest.java:29)
 
-setUp(com.crm.qa.testcases.LoginPageTest)  Time elapsed: 21.811 s  <<< FAILURE!
+loginTest(com.crm.qa.testcases.LoginPageTest)  Time elapsed: 21.231 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: 
-timeout: Timed out receiving message from renderer: 17.382
+timeout: Timed out receiving message from renderer: 20.000
   (Session info: chrome=109.0.5414.119)
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.0.1', java.version: '19.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5e2f943ff84d975db214a7a34308eb70, get {url=https://classic.freecrm.com/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/wv/7btdhzfn7yz...}, goog:chromeOptions: {debuggerAddress: localhost:61242}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:61242/devtoo..., se:cdpVersion: 109.0.5414.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5e2f943ff84d975db214a7a34308eb70
-	at com.crm.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:22)
+Command: [928a78de6322a1882baded6c3172be3d, clickElement {id=111abcb1-1cbd-410d-9204-b0a4ea99c7d3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/wv/7btdhzfn7yz...}, goog:chromeOptions: {debuggerAddress: localhost:49538}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49538/devtoo..., se:cdpVersion: 109.0.5414.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (928a78de6322a1882baded6c3172be3d)] -> xpath: //input[@type='submit']]
+Session ID: 928a78de6322a1882baded6c3172be3d
+	at com.crm.qa.testcases.LoginPageTest.loginTest(LoginPageTest.java:39)
 
