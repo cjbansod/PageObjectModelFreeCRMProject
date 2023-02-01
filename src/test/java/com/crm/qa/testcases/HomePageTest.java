@@ -39,12 +39,14 @@ public class HomePageTest extends HomePage {
 	public void verifyCorrectUsername() {
 		testutil.switchtoFrame("mainpanel");
 		Assert.assertTrue(homepage.verifyCorretUsername());
+		driver.switchTo().parentFrame();
 	}
 	
 	@Test(priority = 3)
 	public void verifyContactsLinkTest() {
 	    testutil.switchtoFrame("mainpanel");
 	    contactpage = homepage.clickOnContactsLink();
+	    driver.switchTo().parentFrame();
 	}
 	
 	@AfterMethod()
