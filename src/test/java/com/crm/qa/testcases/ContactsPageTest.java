@@ -35,24 +35,26 @@ public class ContactsPageTest extends TestBase{
 		loginpage = new LoginPage();
 		homepage = loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
 		testutil.switchtoFrame("mainpanel");
-		//homepage.clickOnContactsLink();
 	}
 	
 	@Test(priority=1)
 	public void verifyContactsLabel() {
 		homepage.clickOnContactsLink();
 	    Assert.assertTrue(contactsPage.verifyContactslabel(),"Contacts label is not displayed");
+	    driver.switchTo().parentFrame();
 	}
 	
 	@Test(priority=2)
 	public void selectContactsTest() {
 		homepage.clickOnContactsLink();
+		driver.switchTo().parentFrame();
 		contactsPage.selectContactsByName("Naveen khunteta");
 	}
 	
 	@Test(priority = 3 )
 	public void selectMultiple() {
 		homepage.clickOnContactsLink();
+		driver.switchTo().parentFrame();
 		contactsPage.selectContactsByName("Naveen khunteta");
 		contactsPage.selectContactsByName("harish kothnur");
 	}
