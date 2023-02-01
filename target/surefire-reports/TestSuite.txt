@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 26, Failures: 1, Errors: 0, Skipped: 17, Time elapsed: 146.249 s <<< FAILURE! - in TestSuite
+setup(com.crm.qa.testcases.ContactsPageTest)  Time elapsed: 17.895 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <input type="submit" value="Login" class="btn btn-small"> is not clickable at point (1149, 117). Other element would receive the click: <div id="preloader" style="opacity: 1;">...</div>
+  (Session info: chrome=109.0.5414.119)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.0.1', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b08f11683293dee4ffc19e3099bace3a, clickElement {id=3d71be1c-665b-4cc6-aa36-c61420849580}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/wv/7btdhzfn7yz...}, goog:chromeOptions: {debuggerAddress: localhost:57166}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57166/devtoo..., se:cdpVersion: 109.0.5414.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (b08f11683293dee4ffc19e3099bace3a)] -> xpath: //input[@type='submit']]
+Session ID: b08f11683293dee4ffc19e3099bace3a
+	at com.crm.qa.testcases.ContactsPageTest.setup(ContactsPageTest.java:36)
+

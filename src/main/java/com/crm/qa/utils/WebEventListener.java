@@ -39,13 +39,13 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	@Override
 	public void beforeNavigateTo(String url, WebDriver driver) {
 		// TODO Auto-generated method stub
-		System.out.println("Before navigating to:' "+url+"'");
+		System.out.println("Before navigating to:' "+url+" '");
 	}
 
 	@Override
 	public void afterNavigateTo(String url, WebDriver driver) {
 		// TODO Auto-generated method stub
-		System.out.println("Navigated to:' "+url+"'");
+		System.out.println("Navigated to:' "+url+" '");
 	}
 
 	@Override
@@ -111,7 +111,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	@Override
 	public void beforeChangeValueOf(WebElement element, WebDriver driver, CharSequence[] keysToSend) {
 		// TODO Auto-generated method stub
-		System.out.println("Before change value of "+element.toString()+"before any changes made");
+		System.out.println("Before change value of "+element.toString()+" before any changes made");
 	}
 
 	@Override
